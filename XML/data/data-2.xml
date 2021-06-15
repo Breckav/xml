@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="../schemas/schema-2.xsd">
+    <customer>
+        <customerID>fojtiseq</customerID>
+        <name>Vojtech Brecka</name>
+        <email>HyperKraken@hotmail.com</email>
+        <givenName>Vojtech</givenName>
+        <familyName>Brecka</familyName>
+        <login>TurboKraken</login>
+        <nfcTags>
+            <nfcTag>
+                <nfcTagID>testTag</nfcTagID>
+                <code>OXPR456ADS75</code>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-06-09T12:00:00</creationTime>
+            </nfcTag>
+            <nfcTag>
+                <nfcTagID>fojtisequv</nfcTagID>
+                <code>OXPC987ADS75</code>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2001-09-11T12:00:00</creationTime>
+            </nfcTag>
+        </nfcTags>
+        <transactions>
+            <transaction>
+                <transactionID>tr-00003</transactionID>
+                <ammountML>1000</ammountML>
+                <price>
+                    <value>69000</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2021-01-12T12:00:00</creationTime>
+                <bottleID>matyseq_laga16</bottleID>
+            </transaction>
+        </transactions>
+        <ownerships>
+            <ownership>
+                <ownershipID>ow-10001</ownershipID>
+                <shareSize>100</shareSize>
+                <bottleID>fojtiseq_laga16</bottleID>
+            </ownership>
+        </ownerships>
+        <specialPrices>
+            <specialPrice>
+                <specialPriceID>for00</specialPriceID>
+                <price>
+                    <value>0</value>
+                    <currency>CZK</currency> 
+                </price>
+                <bottleID>fojtiseq_laga16</bottleID>
+            </specialPrice>
+        </specialPrices>
+    </customer>
+
+    <customer>
+        <customerID>matisek</customerID>
+        <name>Matyas Brabec</name>
+        <email>Stooped@hotmail.com</email>
+        <givenName>Matyas</givenName>
+        <familyName>Brabec</familyName>
+        <login>KutalejiciseKrava</login>
+        <transactions>
+            <transaction>
+                <transactionID>tr-00002</transactionID>
+                <ammountML>400</ammountML>
+                <price>
+                    <value>120</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-12-31T23:58:00</creationTime>
+                <bottleID>honziq_redb12</bottleID>
+            </transaction>
+            <transaction>
+                <transactionID>tr-00001</transactionID>
+                <ammountML>200</ammountML>
+                <price>
+                    <value>0</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-12-31T23:57:00</creationTime>
+                <bottleID>fojtiseq_laga16</bottleID>
+            </transaction>
+        </transactions>
+        <ownerships>
+            <ownership>
+                <ownershipID>ow-10003</ownershipID>
+                <shareSize>50</shareSize>
+                <bottleID>honziq_redb12</bottleID>
+            </ownership>
+        </ownerships>
+        <specialPrices>
+            <specialPrice>
+                <specialPriceID>matFor65</specialPriceID>
+                <price>
+                    <value>65</value>
+                    <currency>CZK</currency> 
+                </price>
+                <bottleID>matyseq_laga16</bottleID>
+            </specialPrice>
+            <specialPrice>
+                <specialPriceID>matFor50</specialPriceID>
+                <price>
+                    <value>50</value>
+                    <currency>CZK</currency> 
+                </price>
+                <bottleID>honziq_redb12</bottleID>
+            </specialPrice>
+        </specialPrices>
+    </customer>
+
+    <customer>
+        <customerID>kulicka</customerID>
+        <name>Vojtech Mikiska</name>
+        <email>TurboBurt@nitroParek.com</email>
+        <givenName>Vojtech</givenName>
+        <familyName>Mykiska</familyName>
+        <login>TurboBurt</login>
+        <nfcTags>
+            <nfcTag>
+                <nfcTagID>kulickuv</nfcTagID>
+                <code>OXPZ6940ADS75</code>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2012-04-20T12:00:00</creationTime>
+            </nfcTag>
+        </nfcTags>       
+    </customer>
+
+    <customer>
+        <customerID>listecek</customerID>
+        <name>lee stack</name>
+        <email>Listonoh@ddd.com</email>
+        <givenName>Lee</givenName>
+        <familyName>Stack</familyName>
+        <login>LeeStack</login>
+        <nfcTags>
+            <nfcTag>
+                <nfcTagID>listSvobod</nfcTagID>
+                <code>OXPZ5540ADS75</code>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2022-04-20T22:22:22</creationTime>
+            </nfcTag>
+        </nfcTags>            
+        <ownerships>
+            <ownership>
+                <ownershipID>ow-10002</ownershipID>
+                <shareSize>50</shareSize>
+                <bottleID>honziq_redb12</bottleID>
+            </ownership>
+        </ownerships>      
+    </customer>
+</customers>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bottles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+         xsi:noNamespaceSchemaLocation="../schemas/schema-1.xsd">
+    <bottle> 
+        <bottleID>matyseq_laga16</bottleID>
+        <inStock>false</inStock>
+        <shotPrice>
+            <value>69</value>
+            <currency>CZK</currency>
+        </shotPrice>
+        <bottlePrice>
+            <value>1130</value>
+            <currency>CZK</currency>
+        </bottlePrice>
+        <barcode>1348690</barcode>
+        <!-- Odstranen element dateType="^^xsd:dateTime"-->
+        <purchaseDate>1999-09-01T00:00:00</purchaseDate>
+
+        <bottleDescription>
+            <bottleDescriptionID>laga16</bottleDescriptionID>
+            <name>Lagavulin 16 y.o.</name>
+            <age>16</age>
+            <voltage>43</voltage>
+            <distillery>
+                <!-- Odstranen element xml:lang="EN"-->
+                <distilleryID>laga</distilleryID>
+                <name>Lagavulin</name>
+                <founded>1816</founded>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>islay</regionID>
+                    <name>Islay</name>
+                </region>
+            </distillery>
+        </bottleDescription>
+
+        <transactions>
+            <transaction>
+                <transactionID>tr-00003</transactionID>
+                <ammountML>1000</ammountML>
+                <price>
+                    <value>69000</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2021-01-12T12:00:00</creationTime>
+                <customerID>fojtiseq</customerID>
+            </transaction>
+        </transactions>
+
+        <specialPrices>
+            <specialPrice>
+                <specialPriceID>matFor65</specialPriceID>
+                <price>
+                    <value>65</value>
+                    <currency>CZK</currency> 
+                </price>
+                <customerID>matisek</customerID>
+            </specialPrice>
+        </specialPrices>
+    </bottle>
+    
+    <bottle> 
+        <bottleID>matyseq_glen15</bottleID>  
+        <inStock>true</inStock>
+        <shotPrice>
+            <value>87</value>
+            <currency>CZK</currency>
+        </shotPrice>
+        <bottlePrice>
+            <value>978</value>
+            <currency>CZK</currency>
+        </bottlePrice>
+        <barcode>3454665</barcode>
+        <!-- Odstranen element dateType="^^xsd:dateTime"-->
+        <purchaseDate>1939-09-01T00:00:00</purchaseDate>
+        
+        <bottleDescription>
+            <bottleDescriptionID>glen15</bottleDescriptionID>
+            <name>Glenfiddich 15 y.o.</name>
+            <age>15</age>
+            <voltage>40</voltage>
+            <distillery>
+            <!-- Odstranen element xml:lang="EN"-->
+                <distilleryID>glen</distilleryID>
+                <name>Glenmorangie</name>
+                <founded>1843</founded>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>speyside</regionID>
+                    <name>Speyside</name>
+                </region>
+            </distillery>
+        </bottleDescription>
+    </bottle>
+
+    <bottle> 
+        <bottleID>fojtiseq_laga16</bottleID>
+        <inStock>true</inStock>
+        <shotPrice>
+            <value>76</value>
+            <currency>CZK</currency>
+        </shotPrice>
+        <bottlePrice>
+            <value>1159</value>
+            <currency>CZK</currency>
+        </bottlePrice>
+        <barcode>2345657</barcode>
+        <!-- Odstranen element dateType="^^xsd:dateTime"-->
+        <purchaseDate>2020-02-20T20:20:20</purchaseDate>
+        <bottleDescription>
+            <bottleDescriptionID>laga16</bottleDescriptionID>
+            <name>Lagavulin 16 y.o.</name>
+            <age>16</age>
+            <voltage>43</voltage>
+            <distillery>
+            <!-- Odstranen element xml:lang="EN"-->
+                <distilleryID>laga</distilleryID>
+                <name>Lagavulin</name>
+                <founded>1816</founded>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>islay</regionID>
+                    <name>Islay</name>
+                </region>
+            </distillery>
+        </bottleDescription>
+        <transactions>
+            <transaction>
+                <transactionID>tr-00001</transactionID>
+                <ammountML>200</ammountML>
+                <price>
+                    <value>0</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-12-31T23:57:00</creationTime>
+                <customerID>matisek</customerID>
+            </transaction>
+        </transactions>
+
+        <ownerships>            
+            <ownership>
+                <ownershipID>ow-10001</ownershipID>
+                <shareSize>100</shareSize>
+                <customerID>fojtiseq</customerID>
+            </ownership>
+        </ownerships>
+        <specialPrices>
+            <specialPrice>
+                <specialPriceID>for00</specialPriceID>
+                <price>
+                    <value>0</value>
+                    <currency>CZK</currency> 
+                </price>
+                <customerID>fojtiseq</customerID>
+            </specialPrice>
+        </specialPrices>
+    </bottle>
+
+    <bottle> 
+        <bottleID>honziq_redb12</bottleID>
+        <inStock>true</inStock>
+        <shotPrice>
+            <value>90</value>
+            <currency>CZK</currency>
+        </shotPrice>
+        <bottlePrice>
+            <value>1430</value>
+            <currency>CZK</currency>
+        </bottlePrice>
+        <barcode>1235112</barcode>
+        <!-- Odstranen element dateType="^^xsd:dateTime"-->
+        <purchaseDate>2020-02-20T20:20:20</purchaseDate>
+
+        <bottleDescription>
+            <bottleDescriptionID>redb12</bottleDescriptionID>
+            <name>Redbreast 12 y.o.</name>
+            <age>12</age>
+            <voltage>40</voltage>
+            <distillery>
+            <!-- Odstranen element xml:lang="EN"-->
+                <distilleryID>redb</distilleryID>
+                <name>Redbreast</name>
+                <founded>1903</founded>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>ireland</regionID>
+                    <name>Ireland</name>
+                </region>
+            </distillery>
+        </bottleDescription>
+
+        <transactions>
+            <transaction>
+                <transactionID>tr-00002</transactionID>
+                <ammountML>400</ammountML>
+                <price>
+                    <value>120</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-12-31T23:58:00</creationTime>
+                <customerID>matisek</customerID>
+            </transaction>
+        </transactions>
+
+        <ownerships>
+            <ownership>
+                <ownershipID>ow-10002</ownershipID>
+                <shareSize>50</shareSize>
+                <customerID>listecek</customerID>
+            </ownership>
+            <ownership>
+                <ownershipID>ow-10003</ownershipID>
+                <shareSize>50</shareSize>
+                <customerID>matisek</customerID>
+            </ownership>
+        </ownerships>
+
+        <specialPrices>
+            <specialPrice>
+                <specialPriceID>matFor50</specialPriceID>
+                <price>
+                    <value>50</value>
+                    <currency>CZK</currency> 
+                </price>
+                <customerID>matisek</customerID>
+            </specialPrice>
+        </specialPrices>
+    </bottle>
+
+    <bottle> 
+        <bottleID>vojta_bowm18</bottleID>
+        <inStock>true</inStock>
+        <shotPrice>
+            <value>175</value>
+            <currency>CZK</currency>
+        </shotPrice>
+        <bottlePrice>
+            <value>1930</value>
+            <currency>CZK</currency>
+        </bottlePrice>
+        <barcode>7777777</barcode>
+        <!-- Odstranen element dateType="^^xsd:dateTime"-->
+        <purchaseDate>2021-01-12T12:00:00</purchaseDate>
+        <bottleDescription>
+            <bottleDescriptionID>bowm18</bottleDescriptionID>
+            <name>Bowmore 18 y.o.</name>
+            <age>18</age>
+            <voltage>43</voltage>
+            <distillery>
+            <!-- Odstranen element xml:lang="EN"-->
+                <distilleryID>bowm</distilleryID>
+                <name>Bowmore</name>
+                <founded>1779</founded>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>highland</regionID>
+                    <name>Highland</name>
+                </region>
+                <region>
+                <!-- Odstranen element xml:lang="EN"-->
+                    <regionID>speyside</regionID>
+                    <name>Speyside</name>
+                </region>
+            </distillery>
+        </bottleDescription>
+        <transactions>
+            <transaction>
+                <transactionID>tr-00001</transactionID>
+                <ammountML>200</ammountML>
+                <price>
+                    <value>0</value>
+                    <currency>CZK</currency>
+                </price>
+                <!-- Odstranen element dateType="^^xsd:dateTime"-->
+                <creationTime>2020-12-31T23:57:00</creationTime>
+                <customerID>matisek</customerID>
+            </transaction>
+        </transactions>
+    </bottle>
+</bottles>

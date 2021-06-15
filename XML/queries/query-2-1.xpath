@@ -1,0 +1,3 @@
+(:Vypise kod nfc tagu pro customery, kteri pili po 2020-09-01, pokud nfc tag ma:)
+
+//customers/customer[transactions/transaction/creationTime > xs:dateTime("2020-09-01T00:00:00")]/nfcTags/nfcTag/code

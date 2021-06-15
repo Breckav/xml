@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+    <xs:element name="bottles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="bottle" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="bottleID" type="xs:string"/>
+                    <xs:element name="inStock" type="xs:boolean"/>
+
+                    <xs:element name="shotPrice">
+                    <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="value" type="xs:double"/>
+                        <xs:element name="currency" type="xs:string"/>
+                    </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="bottlePrice">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="value" type="xs:double"/>
+                            <xs:element name="currency" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="barcode" type="xs:string"/>
+                    <xs:element name="purchaseDate" type="xs:dateTime"/>
+
+                    
+                    <xs:element name="bottleDescription">
+                        <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="bottleDescriptionID" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="age" type="xs:integer"/>
+                            <xs:element name="voltage" type="xs:integer"/>
+                                <xs:element name="distillery">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="distilleryID" type="xs:string"/>
+                                            <xs:element name="name" type="xs:string"/>
+                                            <xs:element name="founded" type="xs:gYear"/>
+                                            <xs:element name="region" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                        <xs:element name="regionID" type="xs:string"/>
+                                                        <xs:element name="name" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                        </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="transactions" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="transaction" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="transactionID" type="xs:string"/>
+                                    <xs:element name="ammountML" type="xs:integer"/>
+                                    <xs:element name="price">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="value" type="xs:double"/>
+                                            <xs:element name="currency" type="xs:string"/> 
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="creationTime" type="xs:dateTime"/>
+                                    <xs:element name="customerID" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="ownerships" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ownership" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                        <xs:element name="ownershipID" type="xs:string"/>
+                                        <xs:element name="shareSize" type="xs:integer"/>
+                                        <xs:element name="customerID" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name = "specialPrices" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "specialPrice" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="specialPriceID" type="xs:string"/>
+                                    <xs:element name="price">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="value" type="xs:double"/>
+                                            <xs:element name="currency" type="xs:string"/> 
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="customerID" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                </xs:sequence>    
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

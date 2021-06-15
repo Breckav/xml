@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="customers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="customer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="customerID" type="xs:string"/>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="email" type="xs:string"/>
+                    <xs:element name="givenName" type="xs:string"/>
+                    <xs:element name="familyName" type="xs:string"/>
+                    <xs:element name="login" type="xs:string"/>
+
+                    <xs:element name="nfcTags" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nfcTag" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                        <xs:element name="nfcTagID" type="xs:string"/>
+                                        <xs:element name="code" type="xs:string"/>
+                                        <xs:element name="creationTime" type="xs:dateTime"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+                    
+                    <xs:element name="transactions" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="transaction" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                        <xs:element name="transactionID" type="xs:string"/>
+                                        <xs:element name="ammountML"  type="xs:integer"/>
+                                        <xs:element name="price">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="value" type="xs:double"/>
+                                                    <xs:element name="currency" type="xs:string"/> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="creationTime" type="xs:dateTime"/>
+                                        <xs:element name="bottleID" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="ownerships" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ownership" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                        <xs:element name="ownershipID" type="xs:string"/>
+                                        <xs:element name="shareSize" type="xs:integer"/>
+                                        <xs:element name="bottleID" type="xs:string"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="specialPrices" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                                <xs:element name="specialPrice" minOccurs="0" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="price">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="specialPriceID" type="xs:string"/>
+                                                    <xs:element name="value" type="xs:double"/>
+                                                    <xs:element name="currency" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType> 
+                                            </xs:element>
+                                            <xs:element name="bottleID" type="xs:string"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

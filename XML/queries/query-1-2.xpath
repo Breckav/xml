@@ -1,0 +1,3 @@
+(:Vypise vsechny regiony pro customera s ID fojtiseq z kterych ochutnal:)
+
+//bottles/bottle [transactions/transaction/customerID = "fojtiseq"]/bottleDescription/distillery/region 

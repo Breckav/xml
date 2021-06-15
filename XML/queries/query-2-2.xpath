@@ -1,0 +1,3 @@
+(:vypise jmena zakazniku co pili z vlastni flasky:)
+
+//customers/customer[transactions/transaction/bottleID = ownerships/ownership/bottleID]/name
